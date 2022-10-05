@@ -16,4 +16,12 @@ On vois sur cette capture le premier disque dur avec ses différentes partitions
 
 Ci-dessus la création de la première partition de 2 Go de type 'Linux', j'ai pu créer cette partition dans l'interface "sudo fdisk /dev/sdb".
 
+![image](https://user-images.githubusercontent.com/104362418/194077747-5215bfca-750e-4caf-808c-14b3a6b2caa5.png)
+
+Voici la seconde partition créer au format NTFS(extended sous Linux).
+Si je listes toutes les partitions du disques, je constate qu'il y a bien les deux partitions que je viens de créer.
+
+![image](https://user-images.githubusercontent.com/104362418/194078017-9e830773-f1ad-4aaa-aca8-98138d44ea60.png)
+
+4 -- 
 
