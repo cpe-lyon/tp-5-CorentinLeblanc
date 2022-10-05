@@ -10,4 +10,10 @@
 
 On vois sur cette capture le premier disque dur avec ses différentes partitions(40 Go), puis en dessous on retrouve le deuxième disque dur(5 Go).
 
-3 -- 
+3 -- Voici la création des partitions demandées
+
+![image](https://user-images.githubusercontent.com/104362418/194076349-551e8f95-68f2-442c-bffc-b1e00091af33.png)
+
+Ci-dessus la création de la première partition de 2 Go de type 'Linux', j'ai pu créer cette partition dans l'interface "sudo fdisk /dev/sdb".
+
+
