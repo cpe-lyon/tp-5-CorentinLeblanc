@@ -46,11 +46,34 @@ il y a ensuite le numéro de la partition puis sur le point de montage.
 
 8 -- Pour monter une clé USB dans ma VM, il faut passer par la Virtual remote console.(Nous n'y avons pas accès, il faut un compte VMWare).
 
-9 -- Pour créer un dossier partagé entre ma VM et mon système hôte, j'ai trouvé ce lien qui peut etre intéressant:https://openclassrooms.com/fr/courses/2356316-montez-un-serveur-de-fichiers-sous-linux/5173631-partagez-vos-fichiers-sur-un-reseau-linux-avec-nfs
+9 -- Pour créer un dossier partagé entre ma VM et mon système hôte, j'ai trouvé ce lien qui peut etre intéressant:
+https://openclassrooms.com/fr/courses/2356316-montez-un-serveur-de-fichiers-sous-linux/5173631-partagez-vos-fichiers-sur-un-reseau-linux-avec-nfs
 
 Exercice 2. Partitionnement LVM
 
-1 - 
+1 - Voici comment j'ai démonté les systèmes de fichiers qui étaient montés dans /data et /win, /data n'était plus monté.
+
+![image](https://user-images.githubusercontent.com/104362418/194235487-ff5cbf01-e6d4-458b-8ac1-d1ac9831c8a8.png)
+
+Puis je suis allé supprimer les lignes correspondantes dans le fichier "/etc/fstab"
+
+2 -- La suppression des partitions à été réalisée avec la commande "sudo fdisk /dev/sdb" puis l'option "d" ainsi que le numéro de la partition que je souhaite supprimer.
+
+![image](https://user-images.githubusercontent.com/104362418/194236716-00a7c69a-c89f-497c-be7e-eb8632b9f55a.png)
+
+Si je regarde les partitions qui se trouvent dans mon disque je constate qu'il n'y en a aucune.
+
+![image](https://user-images.githubusercontent.com/104362418/194236841-0e36aa8a-e59e-4726-b81e-888d2a0f5b95.png)
+
+J'ai ensuite créé une partition unique puis je l'ai formaté en LVM.
+
+![image](https://user-images.githubusercontent.com/104362418/194238424-2eb357ce-9a85-431c-844c-d4e1a49006e1.png)
+
+
+
+
+
+
 
 
 
