@@ -1,6 +1,6 @@
 **Compte rendu TP 5 --Gestion des disques**
 
-**Exercice 1. Disques et partitions**
+<u>**Exercice 1. Disques et partitions**</u>
 
 1 -- Je me suis rendu dans l'interface de configuration des machines virtuelles et j'ai ajouté un nouveau disque dur de 5Go en allocation dynamique. L'allocation dynamique est importante car elle permet d'utiliser uniquement l'espace nécessaire.(Exemple -> Si je créer une VM de 20 Go dynamiquement alloué alors le système prendra uniquement l'espace dont il a besoin et agrandira son espace au fur et a mesure. A contrario, une machine non dynamiquement alloué reservera directement 20Go qui deviendront inutilisables par la suite.)
 
@@ -49,7 +49,7 @@ il y a ensuite le numéro de la partition puis sur le point de montage.
 9 -- Pour créer un dossier partagé entre ma VM et mon système hôte, j'ai trouvé ce lien qui peut etre intéressant:
 https://openclassrooms.com/fr/courses/2356316-montez-un-serveur-de-fichiers-sous-linux/5173631-partagez-vos-fichiers-sur-un-reseau-linux-avec-nfs
 
-__**Exercice 2. Partitionnement LVM**__
+<u>**Exercice 2. Partitionnement LVM**</u>
 
 1 - Voici comment j'ai démonté les systèmes de fichiers qui étaient montés dans /data et /win, /data n'était plus monté.
 
