@@ -100,7 +100,11 @@ Après avoir créer une partition unique, j'ai créé un volume physique, je con
 
 ![image](https://user-images.githubusercontent.com/104362418/194247506-7acac2d1-0395-4957-8eab-735424c7216a.png)
 
-8 -- 
+8 -- Voici l'ajout du nouveau disque au groupe de volume
+
+![image](https://user-images.githubusercontent.com/104362418/194248741-79df5617-ba1f-47c5-8506-8143de578786.png)
+
+9 -- 
 
 
 
