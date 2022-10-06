@@ -86,5 +86,16 @@ J'ai ensuite créé une partition unique.
 ![image](https://user-images.githubusercontent.com/104362418/194244917-89dde743-ee69-488f-9191-40ebe27be3e5.png)
 
 J'ai ensuite fait en sorte qu'il soit monté de manière automatique au démarrage de la machine dans "/data".
+Pour ceci, je me suis servis des réponses que j'avais données aux questions 6 et 7.
+
+7 -- Pour cette question, je me suis servis de la question 1 de l'exercice 1 ainsi que des questions 2 et 3 de l'exercice 2.
+
+![image](https://user-images.githubusercontent.com/104362418/194246638-107cda41-8a92-41eb-bbae-abefff95283d.png)
+
+Le disque est bien présent.
+
+
+
+
 
 
