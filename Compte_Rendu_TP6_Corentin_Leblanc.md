@@ -65,15 +65,26 @@ Si je regarde les partitions qui se trouvent dans mon disque je constate qu'il n
 
 ![image](https://user-images.githubusercontent.com/104362418/194236841-0e36aa8a-e59e-4726-b81e-888d2a0f5b95.png)
 
-J'ai ensuite créé une partition unique puis je l'ai formaté en LVM.
+J'ai ensuite créé une partition unique.
 
 ![image](https://user-images.githubusercontent.com/104362418/194238424-2eb357ce-9a85-431c-844c-d4e1a49006e1.png)
 
+3 -- La commande "pvcreate" m'a bien permis de créer un volume physique LVM. La commande "pvdisplay" m'indique qu'il a bien été créé.
 
+![image](https://user-images.githubusercontent.com/104362418/194242133-fb5e2f69-8ee1-4cd1-90a2-511b5f1c0e8d.png)
 
+4 -- Même chose que la question précédente mais avec la commande "vgcreate" et "vgdisplay"
 
+![image](https://user-images.githubusercontent.com/104362418/194242742-8d119653-b232-41ba-9444-8c58386cbc8e.png)
 
+5 -- Je me suis servis de l'option "-l 100%FREE" pour utiliser la totalité de l'espace libre puis "-n lvData" pour lui donner le nom demandé.
 
+![image](https://user-images.githubusercontent.com/104362418/194243387-c024ef61-add0-4151-96ad-2ec01a778fdf.png)
 
+6 -- Voici la création de la partition qui à été formaté en ext4.
+
+![image](https://user-images.githubusercontent.com/104362418/194244917-89dde743-ee69-488f-9191-40ebe27be3e5.png)
+
+J'ai ensuite fait en sorte qu'il soit monté de manière automatique au démarrage de la machine dans "/data".
 
 
