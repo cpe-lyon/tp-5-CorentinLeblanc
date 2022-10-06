@@ -94,7 +94,13 @@ Pour ceci, je me suis servis des réponses que j'avais données aux questions 6 
 
 Le disque est bien présent.
 
+![image](https://user-images.githubusercontent.com/104362418/194247264-ce9c7d96-c095-42b0-a118-efa3b2b94bf2.png)
 
+Après avoir créer une partition unique, j'ai créé un volume physique, je constate qu'il est bien présent avec la commande "pvdisplay".
+
+![image](https://user-images.githubusercontent.com/104362418/194247506-7acac2d1-0395-4957-8eab-735424c7216a.png)
+
+8 -- 
 
 
 
