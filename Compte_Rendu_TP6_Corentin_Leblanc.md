@@ -104,7 +104,9 @@ Après avoir créer une partition unique, j'ai créé un volume physique, je con
 
 ![image](https://user-images.githubusercontent.com/104362418/194248741-79df5617-ba1f-47c5-8506-8143de578786.png)
 
-9 -- 
+9 -- Voici les commandes pour agrandir le volume logique:
+-sudo lvresize -l +100%FREE /dev/vg01/lvData
+-sudo resize2fs /dev/vg01/lvData
 
 
 
