@@ -32,13 +32,15 @@ Si je listes toutes les partitions du disques, je constate qu'il y a bien les de
 
 Les commandes à utilisé sont "**mkfs.ext4 /dev/sdb1**" pour la première et "**mkfs.ntfs /dev/sdb2**" pour la seconde partition.
 
-5 -- La commande **"df -T"** ne fonctionne pas sur notre disque car elle n'affiche que le disque sur lequelle se trouve le système d'exploitation.
+5 -- La commande **"df -T"** ne fonctionne pas sur notre disque car il n'a pas encore été monté.
 
 ![image](https://user-images.githubusercontent.com/104362418/194227998-696ca1b5-db27-41d0-81e8-9bdb0c08241f.png)
 
 6 -- J'ai ajouté ces deux lignes dans le fichier **"/etc/fstab"**, il contient le nécessaire pour automatiser le montage des partitions.
 
 ![image](https://user-images.githubusercontent.com/104362418/194230647-29d71004-275c-46e5-82ba-e13448f9939b.png)
+
+Puis pour valider j'ai fais "**mount -a**" puis "**mount**".
 
 7 -- J'ai utilisé la commande ci-dessous pour monter les partitions puis j'ai reboot ma machine.
 
