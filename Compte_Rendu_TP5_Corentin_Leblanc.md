@@ -93,6 +93,8 @@ J'ai ensuite créé une partition unique.
 J'ai ensuite fait en sorte qu'il soit monté de manière automatique au démarrage de la machine dans **"/data"*.
 Pour ceci, je me suis servis des réponses que j'avais données aux questions 6 et 7.
 
+On se sert également des commandes "**fdisk /dev/mapper/vg00-lvData**" et "**mkfs.ext4 /dev/mapper/vg00-lvData**".
+
 7 -- Pour cette question, je me suis servis de la question 1 de l'exercice 1 ainsi que des questions 2 et 3 de l'exercice 2.
 
 ![image](https://user-images.githubusercontent.com/104362418/194246638-107cda41-8a92-41eb-bbae-abefff95283d.png)
@@ -105,15 +107,19 @@ Après avoir créer une partition unique, j'ai créé un volume physique, je con
 
 ![image](https://user-images.githubusercontent.com/104362418/194247506-7acac2d1-0395-4957-8eab-735424c7216a.png)
 
+On peut aussi se servir de "**fdisk /dev/sdc**" et de "**pvcreate /dev/sdc1**".
+
 8 -- Voici l'ajout du nouveau disque au groupe de volume
 
 ![image](https://user-images.githubusercontent.com/104362418/194248741-79df5617-ba1f-47c5-8506-8143de578786.png)
 
 9 -- Voici les commandes pour agrandir le volume logique:
 
--sudo lvresize -l +100%FREE /dev/vg01/lvData
+sudo lvresize -l 2046 /dev/mapper/vg00-lvData (2046 correspond à 8Gio)
 
--sudo resize2fs /dev/vg01/lvData
+sudo e2fsck -f /dev/mapper/vg00-lvData
+
+sudo resize2fs /dev/mapper/vg00-lvData
 
 
 
