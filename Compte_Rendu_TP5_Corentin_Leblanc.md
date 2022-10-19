@@ -11,6 +11,7 @@
 ![image](https://user-images.githubusercontent.com/104362418/194069211-d2e95218-c09c-49cb-a041-796fe4c61717.png)
 
 On vois sur cette capture le premier disque dur avec ses différentes partitions(40 Go), puis en dessous on retrouve le deuxième disque dur(5 Go).
+J'aurais également pu utilisé "**fdisk -l**".
 
 3 -- Voici la création des partitions demandées
 
@@ -28,6 +29,8 @@ Si je listes toutes les partitions du disques, je constate qu'il y a bien les de
 4 -- J'ai formaté mes deux partitions au format ntfs grâce à la commande **"mkfs"**.
 
 ![image](https://user-images.githubusercontent.com/104362418/194229864-592e40e7-b495-4453-a96b-6a55ec666fb4.png)
+
+Les commandes à utilisé sont "**mkfs.ext4 /dev/sdb1**" pour la première et "**mkfs.ntfs /dev/sdb2**" pour la seconde partition.
 
 5 -- La commande **"df -T"** ne fonctionne pas sur notre disque car elle n'affiche que le disque sur lequelle se trouve le système d'exploitation.
 
